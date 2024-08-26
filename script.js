@@ -1,3 +1,7 @@
+if (window.location.search) {
+    document.querySelector('.user-input').remove();
+    document.querySelector('.countries-container').remove();
+}
 const apiDataUrl = './data.json';
 const mainContainer = document.querySelector('.main-container');
 const mainElement = document.querySelector('main')
@@ -190,7 +194,6 @@ fetch(apiDataUrl).then(res => {
             }
         })
     } else {
-        document.querySelector('.user-input').remove();
         mainElement.classList.add('selected-country-main')
         const filteredCountry = data.filter(ele => {
             return window.location.search.slice(7) == ele.alpha2Code;
