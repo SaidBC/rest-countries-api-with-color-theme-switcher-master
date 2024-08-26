@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <h2>Where in The World?</h2>
+            <div class="mode">
+                <input type="checkbox" class="toggle">
+                <div class="toggle-handler">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+            </div>
+        </header>
+        <main class="">
+            <div class="user-input">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="" id="search-input" placeholder="Search for coutry ...">
+                </div>
+                <div class="select-container">
+                    <select value="default" id="select-region">
+                        <option name="" id="">Filter By Region</option>
+                        <option name="africa" id="Africa">Africa</option>
+                        <option name="america" id="America">America</option>
+                        <option name="asia" id="Asia">Asia</option>
+                        <option name="europe" id="Europe">Europe</option>
+                        <option name="oceania" id="Oceania">Oceania</option>
+                    </select>
+                </div>
+            </div>
+            <div class="countries-container"></div>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
